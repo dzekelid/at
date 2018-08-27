@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Coord
 x-complete: 1
@@ -14,4 +13,81 @@ produces:
 - application/json
 consumes:
 - application/json
----
+paths:
+  /bybounds/time_rules:
+    get:
+      summary: Find the rules for all curbs within a bounding box at a particular
+        time.
+      description: Find the rules for all curbs within a bounding box at a particular
+        time..
+      operationId: get_at_time_by_bounds
+      x-api-path-slug: byboundstime-rules-get
+      parameters:
+      - in: query
+        name: access_key
+        description: The API access key for the request
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Find
+      - Rules
+      - Curbs
+      - Within
+      - Bounding
+      - Box
+      - At
+      - Particular
+      - Time
+  /bycurb/{id}/time_rules:
+    get:
+      summary: Find the rules on a single curb at a certain time.
+      description: Find the rules on a single curb at a certain time..
+      operationId: get_at_time_by_curb_id
+      x-api-path-slug: bycurbidtime-rules-get
+      parameters:
+      - in: query
+        name: access_key
+        description: The API access key for the request
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Find
+      - Rules
+      - "On"
+      - Single
+      - Curb
+      - At
+      - Certain
+      - Time
+  /bylocation/time_rules:
+    get:
+      summary: Find the rules for curbs near a location at a certain time.
+      description: |-
+        Find the rules for a given curb at a given time and on a given day. You can also use this
+        to find all of the places that it is possible to perform a given action (for instance, find
+        all the loading zones, or everywhere with two-hour parking).
+      operationId: get_at_time_by_location
+      x-api-path-slug: bylocationtime-rules-get
+      parameters:
+      - in: query
+        name: access_key
+        description: The API access key for the request
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Find
+      - Rulescurbs
+      - Near
+      - Location
+      - At
+      - Certain
+      - Time

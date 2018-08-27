@@ -7,11 +7,22 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "264121"
 tags: At
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/at/master/_listings/predix/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Asset - Get a snapshot of an entity at or before a specified datetime (ISO-8601).
+  x-api-slug: v1systemauditsnapshots-get
+  description: For detailed documentation of all available query options please refer
+    to Predix Asset Documentation.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/predix-vector-logo.png
+  humanURL: https://www.predix.io
+  baseURL: https:////
+  tags: SaaS, Technology, Enterprise, Internet of Things, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/at/master/_listings/predix/v1systemauditsnapshots-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://predicthq.api.gallery.streamdata.io
